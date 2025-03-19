@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+//Head
+<% = include('partials/head') %>
+<body>
+    //Header
+    <% = include('partials/header') %>
+    
+    <p>Formulario de carga</p>
+
+    <form action="/users/create" method="post">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" required>
+        <label for="email">Correo electrónico</label>
+        <input type="email" name="email" id="email" required>
+        <label for="contraseña">Contraseña</label>
+        <input type="password" name="contraseña" id="contraseña" required>
+        <button type="submit">Cargar</button>
+    </form>
+
+    //Footer
+    <% = include('partials/footer') %>
+    
+</body>
+</html>

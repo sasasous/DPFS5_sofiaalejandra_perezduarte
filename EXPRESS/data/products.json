@@ -1,0 +1,34 @@
+[
+    {
+        "id": "1",
+        "name": "agua",
+        "image": "/assets/imagenes/agua.png",
+        "category": "retrato",
+        "tamaño": "1280px × 1280px",
+        "price": "50usd"
+    },
+    {
+        "id": "2",
+        "name": "LEV",
+        "image": "/assets/imagenes/LEV.png",
+        "category": "retrato",
+        "tamaño": "1280px × 1280px",
+        "price": "50usd"
+    },
+    {
+        "id": "3",
+        "name": "Serpiente",
+        "image": "/assets/imagenes/serpiente.png",
+        "category": "retrato",
+        "tamaño": "1280px × 1280px",
+        "price": "50usd"
+    },
+    {
+        "id": "4",
+        "name": "Vampiro",
+        "image": "/assets/imagenes/vampiro.png",
+        "category": "retrato",
+        "tamaño": "1280px × 1280px",
+        "price": "50usd"
+    }
+]

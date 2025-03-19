@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "email": "johndoe@gmail.com",
+        "contraseña": "123456",
+        "imagen": "https://cdn-icons-png.freepik.com/512/456/456212.png"
+    },
+    {
+        "id": 2,
+        "name": "Jane Doe",
+        "email": "janedoe@gmail.com",
+        "contraseña": "123457",
+        "imagen": "https://cdn-icons-png.freepik.com/512/456/456212.png"
+    },
+    {
+        "id": 3,
+        "name": "John Smith",
+        "email": "johnsmith@gmail.com",
+        "contraseña": "123458",
+        "imagen": "https://cdn-icons-png.freepik.com/512/456/456212.png"
+    },
+    {
+        "id": 4,
+        "name": "Jane Smith",
+        "email": "janesmith@gmail.com",
+        "contraseña": "123459",
+        "imagen": "https://cdn-icons-png.freepik.com/512/456/456212.png"
+    }
+]
