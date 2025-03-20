@@ -1,0 +1,9 @@
+# DISEÑO
+## PALETA
+#FFFFFF
+#F8F6E7
+#FAD899
+#000000
+
+## TIPOGRAFÍA
+Jockey One
