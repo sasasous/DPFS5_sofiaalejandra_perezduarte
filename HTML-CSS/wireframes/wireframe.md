@@ -1,0 +1,1 @@
+[wireframe](https://www.figma.com/design/pIh9g0UPbABXyfw1gji2Gu/SOSarte?node-id=1669-162202&t=Kn5kLSqDrgiYZ6jT-1)
