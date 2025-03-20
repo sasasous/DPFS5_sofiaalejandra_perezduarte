@@ -4,7 +4,7 @@ let userController = {
     },
 
     store: function(req, res) {
-        let info = req.body
+        let info = req.body;
         return res.redirect('/');
     },
 

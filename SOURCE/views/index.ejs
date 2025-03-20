@@ -16,6 +16,11 @@
          <br>
          <button> <a id="ver" href="/productos/productDetail.html"> VER </a> </button>
       </article>
+      <article>
+        <% if(locals.lastProduct !== undefined) { %>
+          <p>La última ilustración cargada es: <%lastProduct.title%> </p>
+        <% } %>
+      </article>
    </section>
 
     <!--FOOTER-->

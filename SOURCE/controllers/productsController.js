@@ -5,6 +5,8 @@ let productController = {
 
     store:function(req,res){
         let info = req.body;
+        req.session.lastProduct = info;
+        return res.send(req.session);
         return res.redirect('/');
     },
 

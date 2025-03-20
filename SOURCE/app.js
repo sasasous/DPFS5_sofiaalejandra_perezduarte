@@ -17,6 +17,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+let session = require('express-session')
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -51,8 +53,23 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({
+  secret: 'dhproducts',
+  resave: false,
+  saveUninitializaed: true,
+}))
+
+app.use(function(req, res, next) {
+  if(req.session.lastProduct !== undefined)
+  res.locals.lastProduct = req.session.lastProduct
+
+  return next()
+})
+
+//Rutas
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/products', productsRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
