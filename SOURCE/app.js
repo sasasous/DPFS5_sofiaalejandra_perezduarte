@@ -26,7 +26,8 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 const express = require('express')
-const multer = require('multer')
+const multer = require('multer');
+const { log } = require('console');
 const upload = multer({ dest: 'uploads/' })
 
 const app = express()
@@ -60,11 +61,14 @@ app.use(session({
 }))
 
 app.use(function(req, res, next) {
+  console.log(req.cookies.lastProduct);
   if(req.session.lastProduct !== undefined)
   res.locals.lastProduct = req.session.lastProduct
 
   return next()
 })
+
+
 
 //Rutas
 app.use('/', indexRouter);

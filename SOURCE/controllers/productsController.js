@@ -6,7 +6,9 @@ let productController = {
     store:function(req,res){
         let info = req.body;
         req.session.lastProduct = info;
-        return res.send(req.session);
+       
+        res.cookie('lastProduct', info.title, {maxAge: 1000*60*5 } )
+
         return res.redirect('/');
     },
 
