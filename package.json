@@ -1,0 +1,30 @@
+{
+  "name": "proyecto-express",
+  "version": "1.0.0",
+  "description": "proyecto con express",
+  "main": "app.js",
+  "private": true,
+  
+  "scripts": {
+    "test": "echo/*Error: no test specified/*&& exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasasous/DPFS5_sofiaalejandra_perezduarte"
+ },
+ "author": "Sofía",
+ "license": "ISC",
+ "bugs": {
+  "url": "https://github.com/sasasous/DPFS5_sofiaalejandra_perezduarte/issues",
+ "homepage": "https://github.com/sasasous/DPFS5_sofiaalejandra_perezduarte#readme"
+ },
+ 
+ "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  }
+}
