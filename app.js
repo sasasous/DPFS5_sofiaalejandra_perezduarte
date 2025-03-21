@@ -6,15 +6,15 @@ const path =
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/index.ejs')
+  res.sendFile(__dirname + '/views/index.html')
 })
 
 app.get('/addProduct', (req, res) => {
-  res.sendFile(__dirname + '/views/products/create.ejs')
+  res.sendFile(__dirname + '/views/products/create.html')
 })
 
 app.get('/login', (req, res) => {
-  res.send(__dirname + '/views/users/login.ejs')
+  res.send(__dirname + '/views/users/login.html')
 })
 
 app.listen(port, () => {
