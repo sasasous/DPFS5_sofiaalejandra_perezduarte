@@ -14,7 +14,7 @@ app.get('/addProduct', (req, res) => {
 })
 
 app.get('/login', (req, res) => {
-  res.send(__dirname + '/views/users/login.html')
+  res.sendFile(__dirname + '/views/users/login.html')
 })
 
 app.listen(port, () => {

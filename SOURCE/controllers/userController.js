@@ -5,6 +5,10 @@ let userController = {
 
     store: function(req, res) {
         let info = req.body;
+        req.session.user = info;
+        res.cookie('user', info.email, {maxAge: 60000});
+        res.cookie('password', info.password, {maxAge: 60000});
+        res.redirect('/');
         return res.redirect('/');
     },
 
